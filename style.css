@@ -7,16 +7,21 @@
 }
 
 body {
-  background:black;
   max-width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
+header {
+  border-bottom: 10px solid black;
+}
+
 nav {
   font-size: 1.5em;
-  width: 100%;
-  padding: 20px 0 20px 0;
+  float: right;
+  width: 88%;
+  padding-top:20px;
   display: table;
+  min-height: 55px ;
   /*background-color:rgba(0, 0, 0, 0.5);*/
   background-color: white;
 
@@ -29,11 +34,18 @@ nav ul {
 }
 
 #banner {
-  display: table-cell;
-  margin: auto;
-  background-color: blue;
-  text-align: center;
+  display: inline-block;
+  float: left;
+  width: 12%;
+  padding-top: 20px;
+  min-height: 55px ;
+  background-color: rgba(0, 35, 102, 0.95);
+}
 
+#banner>h1 {
+  text-align: center;
+  color: white;
+  padding: 0 15px 0 15px;
 }
 
 nav li {
@@ -82,11 +94,13 @@ img#logo_main {
 #wrapper {
   padding-top: 12.5%;
   padding-bottom: 12.5%;
+  background-color: rgba(0, 0, 0, 1);
 }
 section#welcome {
   /*background-image: url("images/backgrounds/ny_2.jpeg");*/
   background-size: cover;
   background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 section#welcome h1 {
@@ -102,4 +116,43 @@ section#welcome p {
   font-weight: lighter;
   text-align: center;
   padding-bottom: 20px;
+}
+
+#featured_listings_whole {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#featured_listings_wrapper{
+  display: table;
+  width: 80%;
+  margin: auto;
+
+}
+
+#featured_listings_whole>p {
+  text-align: center;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+section#featured_listings {
+  list-style: none;
+  display: table-row;
+  width: 100%;
+}
+
+section#listings_block {
+  display: table-cell;
+  margin: auto;
+}
+
+img#listings_block_img{
+  margin: auto;
+  display: block;
+  max-width: 256px;
+  max-height: 256px;
+  border: 5px solid white;
 }
